@@ -1,0 +1,196 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+fieldset{
+width:700px;
+border-radius: 4%;
+border: 3px solid black;
+font-size: 20px;
+font-weight: 450px;
+}
+input:required{
+border: 2px solid red;
+border-radius: 5px;
+
+}
+input:optional{
+border: 2px solid rgb(21, 170, 240);
+border-radius: 5px;
+
+}
+select:required:hover{
+background-color: rgb(0, 255, 55);
+}
+select:required{
+border: 2px solid rgb(220, 67, 7);
+border-radius: 10px;
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+color: rgb(26, 36, 36);
+background: rgb(162,107,201);
+background: radial-gradient(circle, rgba(162,107,201,0.8066876408766632) 3%, rgba(14,118,220,0.8066876408766632) 100%, rgba(199,174,238,1) 100%);
+}
+input[readonly]:hover{
+background-color: rgb(151, 13, 137);
+color:black;
+}
+input[readonly] {
+border: 2px solid rgb(202, 22, 25);
+background: rgb(240,238,13);
+background: radial-gradient(circle, rgba(240,238,13,0.8066876408766632) 90%, rgba(160,161,12,1) 100%, rgba(194,220,14,1) 100%, rgba(13,13,240,0.8066876408766632) 100%);
+color: rgb(2, 28, 69);
+font-weight: 550;
+}
+input[type="radio"]:checked{
+height:20px;
+width:20px;
+}
+input[type="radio"]{
+cursor: pointer;
+}
+input[type="radio"]:checked+label{
+border-radius: 10px;
+background: rgb(113,84,128);
+background: radial-gradient(circle, rgba(113,84,128,1) 0%, rgba(125,14,220,0.8066876408766632) 100%, rgba(13,13,240,0.8066876408766632) 100%);
+color:#f3efef;
+font-size: 20px;
+}
+input[type="file"]:hover{
+background-color: rgb(173, 7, 173);
+}
+input[type="file"]{
+background-color: rgb(230, 238, 118);
+border-radius: 10px;
+cursor: pointer;
+}
+button[type="reset"]:hover{
+background-color: rgb(16, 16, 17);
+border-radius: 30px;
+color: bisque;
+}
+
+button[type="reset"]{
+border-radius: 20px;
+font-size:13px;
+font-weight: 550;
+background: rgb(220,56,14);
+background: radial-gradient(circle, rgba(220,56,14,0.8066876408766632) 15%, rgba(201,170,107,0.8066876408766632) 100%, rgba(199,174,238,1) 100%);
+color:rgb(22, 21, 18);
+border: 2px solid rgb(209, 5, 87);
+cursor: pointer;
+}
+button[type="button"]{
+border-radius: 20px;
+background: rgb(252,167,69);
+background: linear-gradient(90deg, rgba(252,167,69,1) 0%, rgba(58,81,180,0.9523459041819853) 0%, rgba(46,15,93,0.907527977011117) 100%);
+color: beige;
+font-weight: 550;
+border: 2px solid red;
+cursor: pointer;
+}
+button[type="submit"]{
+border-radius: 20px;
+width:100px;
+font-size: 20px;
+font-weight: 550;
+cursor: pointer;
+color:beige;
+border: 2px solid red;
+background: rgb(252,167,69);
+background: linear-gradient(90deg, rgba(252,167,69,1) 0%, rgba(58,180,64,1) 0%, rgba(15,93,71,0.9047268565629377) 55%);
+}
+fieldset>legend{
+color: rgb(245, 240, 230);
+background: rgb(252,167,69);
+background: linear-gradient(90deg, rgba(252,167,69,1) 0%, rgba(58,81,180,0.9523459041819853) 0%, rgba(46,15,93,0.907527977011117) 100%);
+border-radius: 20px;
+font-size: 15px;
+}
+h1{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,199,0.4956896551724138) 40%, rgba(146,49,205,1) 80%);
+border-radius: 20px;
+font-size: 30px;
+font-weight:700 ;
+color: rgb(237, 237, 180);
+
+} 
+span{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,199,0.4956896551724138) 0%, rgba(0,212,255,1) 100%);
+border-radius: 18px;
+font-size: 40px;
+font-weight: 650;
+align-items: center;
+color: rgb(15, 12, 7);
+}
+textarea{
+background-color: bisque;
+border: 2px solid rgb(202, 22, 25);
+}
+input+p{
+display: none;
+}
+input:hover+p{
+display: inline;
+font-size: 11px;
+background-color: rgb(172, 8, 110);
+font-weight: 700;
+color: blanchedalmond;
+border-radius: 2px;
+}
+input:focus{
+background-color: rgb(61, 40, 243);
+color: blanchedalmond;
+border-radius: 5px;
+font-weight: 750;
+}
+input[type="password"]+p{
+font-size: 10px;
+}
+td>select[name="Course"]+p{
+display: none;
+}
+td>select[name="Course"]:hover+p{
+display: inline;
+font-size: 11px;
+background-color: rgb(172, 8, 110);
+font-weight: 700;
+color: blanchedalmond;
+border-radius: 5px;
+}
+select~img{
+display: none;
+}
+td>select[name="Course"]:focus:valid~img.valid{
+display: inline;
+width: 15px;
+height: 15px;
+border-radius: 200px;
+
+}
+td>select[name="Course"]:focus:invalid~img.invalid{
+display: inline;
+width: 15px;
+height: 15px;
+border-radius: 200px;
+}
+
+input~img{
+display: none;
+}
+input:focus:valid~img.valid{
+display: inline;
+width: 15px;
+height: 15px;
+border-radius: 200px;
+}
+input:focus:invalid~img.invalid{
+display: inline;
+width: 15px;
+height: 15px;
+border-radius: 200px;
+}

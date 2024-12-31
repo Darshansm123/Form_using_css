@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Tap1.jpg">
+    <meta name="description" content="This page is all about Tap Academey Course Registration Form">
+    <meta author="DARSHAN S M">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1><Marquee> Welcome to Tap Accademey</Marquee></h1>
+    <span>Course Registration Form</span>  
+<form action="Thank.html">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Fname" placeholder="First name" required>&nbsp;<p>Enter your First Name</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Sure Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Sname" title="Enter your sure name" placeholder="Sure name" optional>&nbsp;<p>Enter your Sure Name</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Middle name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Mname" placeholder="Middle name" required>&nbsp;<p>Enter your Middle Name</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="Email" name="Email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                    title="Please enter a valid email address (e.g., user@example.com)">
+                    <p>Enter your Email</p>
+                    <img src="yes.jpg" class="valid" alt="Valid">
+                    <img src="no.jpg" class="invalid" alt="Invalid">
+                    
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="Phone">Phone Number:</label>
+                </td>
+                <td>
+                    <input 
+                        type="tel" id="Phone" name="Phone" placeholder="Phone No" required pattern="^\d{10}$" 
+                        title="Please enter a valid 10-digit phone number">
+                    <p>Enter your Contact Number</p>
+                    <img src="yes.jpg" class="valid" alt="Valid">
+                    <img src="no.jpg" class="invalid" alt="Invalid">
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="Password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="Password" name="Password" placeholder="Minimum 8 Character" required 
+                        pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                        title="Password must include at least 1 uppercase letter, 1 lowercase letter, 1 special character, 1 number, and be at least 8 characters long.">
+                        <p>Include 1.Uppercase 1.Lowercase 1.Special Character 1.Number</p>
+                        <img src="yes.jpg" class="valid" alt="Valid">
+                        <img src="no.jpg" class="invalid" alt="Invalid">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="CPassword">Confirm Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="CPassword" name="CPassword" placeholder="Confirm Password" title="Enter same password" required>
+                    <p>Confirm your password</p>
+                    <img src="yes.jpg" id="confirmValid" class="valid" alt="Valid">
+                    <img src="no.jpg" id="confirmInvalid" class="invalid" alt="Invalid">
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" name="DOB" required>&nbsp;<p>Enter date of Birth</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Age:</label>
+                </td>
+                <td>
+                    <input type="number" name="Age" placeholder="Age" min="18" max="100" required>&nbsp;<p>Enter your Age</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required><label for="">Male</label>
+                    <input type="radio" name="gender" value="Female" required><label for="">Female</label>
+                    <input type="radio" name="gender" value="Female" required><label for="">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Address:</label>
+                </td>
+                <td>
+                    <select name="country" placeholder="Country" id="" required>
+                        <option value="">Country</option>
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">Rusia</option>
+                        <option value="">UK</option>
+                        <option value="">China</option>
+                        <option value="">Japan</option>
+                        <option value="">France</option>
+                        <option value="">Germany</option>
+                        <option value="">Australia</option>
+                        <option value="">Canada</option>
+                    </select>
+                    <select name="state" placeholder="State" id="" required>
+                        <option value="">State</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Kerala</option>
+                        <option value="">Delhi</option> 
+                        <option value="">Maharashtra</option>
+                        <option value="">Uttar Pradesh</option>
+                        <option value="">Rajasthan</option>
+                    </select>
+                    <select name="city" placeholder="City" id="" required>
+                        <option value="">City</option>
+                        <option value="">Bengaluru</option>
+                        <option value="">Chennai</option>
+                        <option value="">Hyderabad</option>
+                        <option value="">Kochi</option>
+                        <option value="">Mysore</option>
+                        <option value="">Mumbai</option>
+                        <option value="">New Delhi</option>
+                        <option value="">Trivandrum</option>
+                    </select>
+                    <select name="Pincode" aria-placeholder="Pincode" id="" required>
+                        <option value="">Pincode</option>
+                        <option value="">560011</option>
+                        <option value="">560032</option>
+                        <option value="">560068</option>
+                        <option value="">560044</option>
+                        <option value="">560035</option>
+                        <option value="">560056</option>
+                        <option value="">560087</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Upload File:</label>
+                </td>
+                <td>
+                    <input type="file" name="file" required>&nbsp;<p>Upload your resume</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>     
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Course Details</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Select Course:</label>
+                </td>
+                <td>
+                    <select name="Course" placeholder="Course" id="" required>
+                       <option value="">Course</option>
+                        <option value="">Core Java</option>
+                        <option value="">Advanced Java</option>
+                        <option value="">Hibernate</option>
+                        <option value="">Spring Boot</option>
+                        <option value="">SQL</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JavaScript</option>
+                    </select> 
+                &nbsp;<p>Select Your Interested Course</p><img src="yes.jpg" class="valid" alt=""><img src="no.jpg" class="invalid" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Delivery Mode:</label>
+                </td>
+                <td>
+                    <input type="radio" name="Delevery" value="Online" required><label for="">Online</label>
+                    <input type="radio" name="Delevery" value="Offline" required><label for="">Offline</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""> Institute name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Institute" value="Tap Academey BTM Layout" placeholder="Institute name" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Comments:</label>
+                </td>
+                <td>
+                    <textarea name="Comments" placeholder="Comments" optional></textarea>
+                </td>
+            <tr>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table><br>
+            <button type="button" onclick="window.open('https://thetapacademy.com/', '_blank')">More About Institute</button>
+            &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; 
+            <button type="submit">Submit</button>
+    </fieldset>
+</form>
+</body>
+</html>
